@@ -1,0 +1,28 @@
+#style.css
+The CSS property you've written is incorrect.
+The value for the font-size property must be a valid length unit, such as px, em, or rem.
+A comma is not a valid separator for the length value.
+
+So, the correct CSS would be:
+font-size: 1.5rem;
+
+
+#index.js
+    There is a conflict between the name of the class and the instance created.
+    The class is named "calculator" but the instance is also named "calculator",
+    which will cause a reference error.
+    The delete() method is declared but not implemented.
+
+    The chooseOperation() method is declared but not implemented.
+    The compute() method is declared but not implemented.
+
+    The "equalsButtons" constant is assigned the result of "document.querySelector('[data-equals]')",
+     which will only return the first element with the attribute "data-equals".
+     If there are multiple buttons with this attribute, it will only bind the click event to the first one.
+
+    The same issue applies to "deteleButtons" and "allclearButtons" constants.
+
+    In the event listener for the number buttons, "calculator.appendNumber(button.innerText)"
+    should pass the number value instead of the text representation of the number.
+
+Signed:Tawanda Baruch
